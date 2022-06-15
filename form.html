@@ -1,0 +1,122 @@
+<DOCTYPE html> <html lang="en_us">
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>my portiflio</title>
+            <!.......title image.....>
+            <link rel="shortcut icon" href="image/icon.jpeg">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="mystyle.css">
+            <!....using-fontAwesome...>
+            <script src="https://kit.fontawesome.com/05f0c8caa0.js"
+            crossorigin="anonymous"></script>
+        </head>
+        <body>
+            <!.......main........>
+            <section id="main">
+                <!......my navigation........>
+                <nav>
+                    <a href="#" class="logo">PORTIFLIO</a>
+                    <!.........bar-icon......>
+                <div class="toggle"></div>
+                    <!......menu bar.....>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                    <!.....login-btn...>
+                    <a href="form.html" class="login-btn" class="active">Login</a>
+                    <!.....language.....>
+                    <a href="#" class="lang">En</a>
+                </nav>
+                <!........end of my nav bar......>
+<!......this is where my login form strats from......>
+
+<div id="login-form" class="login-page">
+<div class="form-box">
+<div class="button-box">
+<form action="/action_page.php" method="POST">
+<button type="button"onclick="login()"class="toggle-btn">Log In</button>
+<button type="button"onclick="register()"class="toggle-btn">Register</button>
+</form>
+</div>
+<!........this is the login form id.......>
+<form id="login" class="input-group-Login">
+<input type="text" class="input-field" placeholder="Email id" required>
+<input type="password" class="input-field" placeholder="Enter Password" id="myInput" required>
+<input type="checkbox" class="check-field onclick="myFunction()"> <span id="span">Show Password </span>
+<input type="checkbox" class="check-field"><span id="span">Remember Password</span>
+<button type="submit" class="submit-btn">Log In</button>
+</form>
+<!.......this is the register form id.......>
+<form id="register" class="input-group-register">
+<input type="text" class="input-field" placeholder="First Name" required>
+<input type="text" class="input-field" placeholder="Last Name" required>
+<input type="email" class="input-field" placeholder="Email id" required>
+<input type="password" class="input-field" placeholder="Password" id="myInput" required>
+<input type="password" class="input-field" placeholder="Confirm Password" id="myInput" required>
+<input type="checkbox" class="check-field onlick="myfunction()"> <span id="span">Show Password </span>
+<input type="checkbox" class="check-field"><span id="span">I agree to the terms and conditions</span>
+<button type="submit" class="submit-btn">Register</button>
+</form>
+</div>
+</div>
+</div>
+<!.....this is for the password visibility...>
+ <script>
+function myFunction() {
+var x = document.getElementById("myInput");
+if (x.type === "password") {
+x.type = "text";
+} else {
+x.type = "password";
+}
+}
+</script>
+<!.....now i want to add javescript so onclick my register will appear....>
+<script>
+ var x=document.getElementById("login");
+ var y=document.getElementById("register");
+ var z=document.getElementById("btn");
+ function register()
+ {
+ x.style.left="-400px";
+ y.style.left="50px";
+ z.style.left="110px";
+ }
+ function login()
+ {
+ x.style.left="50px";
+ y.style.left="450px";
+ z.style.left="0px";
+ }
+ </script>
+ <script>
+ var modal = document.getElementById("login-form");
+ window.onclick = function(event)
+ {
+ if (event.target = = modal)
+ {
+ modal.style.display = "none";
+ }
+ }
+ </script>
+ <!..........footer starts........>
+ <footer>
+ <p>Ezekiel Madaki Jude</p>
+ <p>For more HTML,CSS, and coding tutorials, please click on the link below to subsribe to my channel.</p>
+ <div class="last-menu">
+ <ul>
+ <li>Home</li>
+ <li>About Me</li>
+ <li>Gallery</li>
+ <li>Contact</li>
+ <li>PrivatePolicy</li>
+ </div>
+ <p class="end">Copyright&copy; By Ezekiel Madaki Jude &reg;</p>
+ <!.......end of footer....>
+ </footer>
+</body>
